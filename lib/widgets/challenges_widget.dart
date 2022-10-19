@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:people_talk/Utilities/text_style.dart';
@@ -7,8 +6,11 @@ import 'package:people_talk/widgets/common_widget.dart';
 import '../Constants/app_constants.dart';
 
 class ContainerOpenCloseChallengWidget extends StatelessWidget {
-  ContainerOpenCloseChallengWidget(
-      {this.index, this.isOpenChallenge, this.isReadContainer});
+  ContainerOpenCloseChallengWidget({
+    this.index,
+    this.isOpenChallenge,
+    this.isReadContainer,
+  });
   int? index;
   bool? isOpenChallenge;
   bool? isReadContainer;
@@ -32,7 +34,7 @@ class ContainerOpenCloseChallengWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15))
                 : BoxDecoration(
                     color: AppColor.redChallegContainer,
-                    borderRadius: BorderRadius.circular(15)),
+                    borderRadius: BorderRadius.circular(60)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -146,18 +148,25 @@ class ContainerOpenCloseChallengWidget extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          height: 40,
-                          width: 40,
+                          padding: EdgeInsets.only(
+                              bottom: isOpenChallenge == true ? 20 : 1),
+                          height: isOpenChallenge == true ? 60 : 40,
+                          width: isOpenChallenge == true ? 50 : 40,
                           child: ImageAssetWidget(
-                              imgPath: AppIconsCls.redMessageIcon,
+                              imgPath: isOpenChallenge == true
+                                  ? AppIconsCls.messageIconWhite
+                                  : AppIconsCls.redMessageIcon,
                               imageOnTap: () {}),
                         ),
-                        Container(
-                          height: 20,
-                          width: 20,
-                          decoration: BoxDecoration(
-                              color: AppColor.lightGreenLogoColor,
-                              borderRadius: BorderRadius.circular(100)),
+                        Visibility(
+                          visible: isOpenChallenge == true ? false : true,
+                          child: Container(
+                            height: 20,
+                            width: 20,
+                            decoration: BoxDecoration(
+                                color: AppColor.lightGreenLogoColor,
+                                borderRadius: BorderRadius.circular(100)),
+                          ),
                         )
                       ],
                     ),
@@ -169,5 +178,22 @@ class ContainerOpenCloseChallengWidget extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+//------ Thumb widget
+class ThumbWidget extends StatelessWidget {
+  ThumbWidget({required this.imagePath, required this.ontap});
+  String imagePath;
+  VoidCallback ontap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        decoration: BoxDecoration(
+            color: AppColor.lightGreenLogoColor,
+            borderRadius: BorderRadius.circular(100)),
+        height: 80,
+        width: 80,
+        child: ImageAssetWidget(imgPath: imagePath, imageOnTap: ontap));
   }
 }

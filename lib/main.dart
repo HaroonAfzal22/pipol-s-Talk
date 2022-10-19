@@ -9,6 +9,8 @@ import 'package:people_talk/Views/freeuserprofile_view.dart';
 import 'package:people_talk/Views/getreserved_view.dart';
 import 'package:people_talk/Views/hobby_view.dart';
 import 'package:people_talk/Views/job_view.dart';
+import 'package:people_talk/Views/jurryhome_view.dart';
+import 'package:people_talk/Views/jurrysorry_view.dart';
 import 'package:people_talk/Views/login_signup_button_view.dart';
 import 'package:people_talk/Views/login_verification_code.dart';
 import 'package:people_talk/Views/my_best_view.dart';
@@ -19,6 +21,7 @@ import 'package:people_talk/Views/phone-signup-view.dart';
 import 'package:people_talk/Views/premiumuserprofile_view.dart';
 import 'package:people_talk/Views/profile_setup_view.dart';
 import 'package:people_talk/Views/profileseenbyuser_view.dart';
+import 'package:people_talk/Views/reserved_view.dart';
 import 'package:people_talk/Views/signup-conformcode_view.dart';
 import 'package:people_talk/Views/splash-view.dart';
 import 'package:people_talk/Views/welcome-view.dart';
@@ -34,7 +37,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const GetReservedView(),
+      home: const JurryHomeView(),
       routes: {
         splashRoute: (context) => const SplashView(),
         welcomeRoute: (context) => const WelcomeView(),
@@ -62,6 +65,9 @@ class MyApp extends StatelessWidget {
         closeChallengeRoute: (context) => const CloseChallengeView(),
           openChallengeRoute: (context) => const OpenChallengview(),
           getReservedRoute: (context) => const GetReservedView(),
+          sorryRoute: (context) => const SorryView(),
+          reservedRoute: (context) => const ReservedView(),
+          jurryHomeRoute: (context) => const JurryHomeView(),
       },
     );
   }

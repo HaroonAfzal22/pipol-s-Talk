@@ -21,5 +21,8 @@ const challengesRoute = '/ChallengesView/';
 const closeChallengeRoute = '/ClosehallengeView/';
 const openChallengeRoute = '/OpenChallengeView/';
 const getReservedRoute = '/GetReservedView/';
+const sorryRoute = '/SorryView/';
+const reservedRoute = '/ReservedView/';
+const jurryHomeRoute = '/JurryHomeView/';
 
 

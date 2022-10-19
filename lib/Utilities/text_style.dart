@@ -57,3 +57,6 @@ var kSmallButtonTextStyle =
     GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w500);
     
 // Close Challenge text style
+// jurry complete screen
+var kjurryScreenTextStyleHeding = GoogleFonts.poppins(
+    fontSize: 48, fontWeight: FontWeight.w600,);

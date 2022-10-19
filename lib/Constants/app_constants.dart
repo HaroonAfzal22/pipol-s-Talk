@@ -54,4 +54,15 @@ class AppIconsCls {
   static const copyTextIcon = '$basePath/copyTextIcon.png';
   static const verticalhandArrow = '$basePath/VerticalhandArrow.png';
   static const redMessageIcon = '$basePath/redMessageIcon.png';
+   static const barErow = '$basePath/barErow.png';
+  static const barImage = "$basePath/barImage.png";
+  static const challengeSetting = "$basePath/challengeSetting.png";
+  static const messageIconWhite = '$basePath/messageIconWhite.png';
+  static const reserved = '$basePath/reserved.png';
+  static const sadEmogy = '$basePath/sadEmogy.png';
+  static const thumsDown = '$basePath/thumsDown.png';
+  static const thumsUp = '$basePath/thumsUp.png';
+   static const textBoxSmallIcon = '$basePath/textBoxSmallIcon.png';
+  static const textBoxIcon = '$basePath/textBoxIcon.png';
+  //-------------------------
 }
