@@ -7,7 +7,6 @@ class AppConstants {
 
 // App Colors
 class AppColor {
-  
   static const Color dateConatinerColor = Color(0xffE1E6EA);
   static const Color challengeIconColor = Color(0xffF5F6F0);
   static const Color cameraIconOuterColor = Color(0xffDBDBDB);
@@ -21,7 +20,9 @@ class AppColor {
   static const textFieldColor = Color(0xffF5F6F0);
   static const inActivestarColor = Color.fromARGB(255, 207, 217, 222);
   static const Color redChallegContainer = Color(0xffFF6D6D);
-  
+  static const checkBoxBorderColor = Colors.grey;
+  static const Color checkBoxFilledColor = Color.fromARGB(255, 207, 207, 207);
+  static const Color rulesContainerColor = Color(0xffFFBE02);
 }
 
 // App Images
@@ -54,7 +55,7 @@ class AppIconsCls {
   static const copyTextIcon = '$basePath/copyTextIcon.png';
   static const verticalhandArrow = '$basePath/VerticalhandArrow.png';
   static const redMessageIcon = '$basePath/redMessageIcon.png';
-   static const barErow = '$basePath/barErow.png';
+  static const barErow = '$basePath/barErow.png';
   static const barImage = "$basePath/barImage.png";
   static const challengeSetting = "$basePath/challengeSetting.png";
   static const messageIconWhite = '$basePath/messageIconWhite.png';
@@ -62,7 +63,23 @@ class AppIconsCls {
   static const sadEmogy = '$basePath/sadEmogy.png';
   static const thumsDown = '$basePath/thumsDown.png';
   static const thumsUp = '$basePath/thumsUp.png';
-   static const textBoxSmallIcon = '$basePath/textBoxSmallIcon.png';
+  static const textBoxSmallIcon = '$basePath/textBoxSmallIcon.png';
   static const textBoxIcon = '$basePath/textBoxIcon.png';
+  static const copyTextIconLarge = '$basePath/copyTextIconLarge.png';
+  static const challengeSettingIcon = '$basePath/ChallengeSettingIcon.png';
+  static const crownIcon = '$basePath/crown.png';
+
   //-------------------------
+  static const crownDoted = '$basePath/CrownDoted.png';
+  static const emailWhiteIcon = '$basePath/EmailWhiteIcon.png';
+  static const mailStarIcon = "$basePath/MailStarIcon.png";
+  static const paymentBage = "$basePath/paymentBage.png";
+  static const payPalIcon = '$basePath/PayPal-Logo 1.png';
+  static const plansIcon = '$basePath/PlansIcon.png';
+  static const rankPols = '$basePath/RankPols.png';
+  static const resultProfileIcon = '$basePath/ResultProfileIcon.png';
+  static const smileEmojiIcon = '$basePath/smileEmojiIcon.png';
+  static const stripe = '$basePath/Stripe.png';
+  static const voteIcon = '$basePath/VoteIcon.png';
+  static const watch = '$basePath/Watch.png';
 }

@@ -24,5 +24,24 @@ const getReservedRoute = '/GetReservedView/';
 const sorryRoute = '/SorryView/';
 const reservedRoute = '/ReservedView/';
 const jurryHomeRoute = '/JurryHomeView/';
+const rulesRoute = '/RulesView/';
+const createChallengeRoute = '/CreateChallengeView/';
+const challegesSettingRoute = '/ChallegesSettingView/';
+const callengeDurationRoute = '/CallengeDurationView/';
+const shareLinkRoute = '/ShareLinkView/';
+const invitaionOpenRoute = '/InvitaionOpenView/';
+const invitaionAcceptRoute = '/InvitaionAcceptView/';
+const inviteJuryRoute = '/InviteJuryView/';
+const linkInvitationRoute = '/LinkInvitationView/';
+const chatRoute = '/ChatView/';
+
+
+
+
+
+
+
+
+
 
 

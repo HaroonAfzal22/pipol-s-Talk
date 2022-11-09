@@ -174,3 +174,54 @@ class CameraIconWidget extends StatelessWidget {
     );
   }
 }
+class ImageRedBarIconWidget extends StatelessWidget {
+  const ImageRedBarIconWidget({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin:
+          const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      decoration: BoxDecoration(
+          color: AppColor.redChallegContainer,
+          borderRadius: BorderRadius.circular(15)),
+      height: 100,
+      width: double.infinity,
+      child: Image.asset(AppIconsCls.barImage),
+    );
+  }
+}
+
+class InvitaionMessageContainerWidget extends StatelessWidget {
+   InvitaionMessageContainerWidget({
+    required this.text
+  }) ;
+String text;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(15),
+      height: 200,
+      width: 350,
+      color: AppColor.dateConatinerColor,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Image.asset(AppIconsCls.textBoxSmallIcon),
+          Flexible(
+            child: Padding(
+              padding: const EdgeInsets.all(15),
+              child: Text(
+                text,
+                style: kinnerBoxTextStyle,
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

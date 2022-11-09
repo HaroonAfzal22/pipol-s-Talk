@@ -16,8 +16,12 @@ var kSendCodeTextStyle =
     GoogleFonts.poppins(fontSize: 15, fontWeight: FontWeight.w500);
 var kTextStyleHeding =
     GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.w600);
+    var kTextStyleShareLink =
+    GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.w600,color: Colors.white);
 
 // profile page Text Style
+var kChellengeTextStyle = GoogleFonts.poppins(
+    fontSize: 19, fontWeight: FontWeight.w600, color: AppColor.scaffoldColor);
 var kProfileTextStyleSubHeding = GoogleFonts.poppins(
     fontSize: 12, fontWeight: FontWeight.w500, color: AppColor.grayLogoColor);
 var kProfileTextStyleHeding = GoogleFonts.poppins(
@@ -60,3 +64,8 @@ var kSmallButtonTextStyle =
 // jurry complete screen
 var kjurryScreenTextStyleHeding = GoogleFonts.poppins(
     fontSize: 48, fontWeight: FontWeight.w600,);
+    var kInviteViewTextStyleHeding = GoogleFonts.poppins(
+    fontSize: 33, fontWeight: FontWeight.w600,);
+
+    var kChatTittleTextStyle = GoogleFonts.poppins(
+    fontSize: 18, fontWeight: FontWeight.w700, color: Colors.black);

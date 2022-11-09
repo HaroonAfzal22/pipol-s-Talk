@@ -201,12 +201,12 @@ class SignUpTextWidget extends StatelessWidget {
 
 class ElevatedButtonWithRightArrow extends StatelessWidget {
   ElevatedButtonWithRightArrow(
-      {required this.iconPah, required this.btnText, required this.onPress});
+      {required this.iconPah, required this.btnText, required this.onPress, this.btnWidth});
 
   String iconPah;
-
   double? radius;
   String btnText;
+  double? btnWidth;
   VoidCallback onPress;
 
   @override
@@ -221,8 +221,8 @@ class ElevatedButtonWithRightArrow extends StatelessWidget {
             iconPah: iconPah,
             btnText: btnText,
           ),
-          const SizedBox(
-            width: 30,
+           SizedBox(
+            width: btnWidth ?? 30,
           ),
           const Icon(
             Icons.arrow_forward_ios_outlined,
@@ -285,3 +285,4 @@ class ElevatedIconButtonWidget extends StatelessWidget {
     );
   }
 }
+// 
